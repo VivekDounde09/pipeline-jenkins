@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools { 
-        nodejs "NodeJS_Installation_Name" // Replace with the name of your Node.js installation in Jenkins Global Tool Configuration
+        nodejs "Node-js" // Replace with the name of your Node.js installation in Jenkins Global Tool Configuration
     }
     stages {
         stage('Checkout') {
