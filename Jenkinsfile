@@ -1,13 +1,13 @@
 pipeline {
     agent any
-    tools { 
+    tools {
         nodejs "Node-js" // Replace with the name of your Node.js installation in Jenkins Global Tool Configuration
     }
     stages {
         stage('Checkout') {
             steps {
                 // Checkout code from your Git repository
-                git 'https://github.com/VivekDounde09/pipeline-jenkins.git'
+                git branch: 'main', url: 'https://github.com/VivekDounde09/pipeline-jenkins.git'
             }
         }
         stage('Install Dependencies') {
