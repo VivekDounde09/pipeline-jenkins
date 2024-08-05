@@ -16,6 +16,13 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Start Development Server') {
+            steps {
+                // Run npm start to start the development server
+                // Note: This is typically not done in CI/CD pipelines
+                sh 'npm start &'
+            }
+        }
         stage('Build') {
             steps {
                 // Run npm run build to build the project
